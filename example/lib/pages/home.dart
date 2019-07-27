@@ -37,7 +37,7 @@ class HomePage extends StatelessWidget {
         ),
       ),
     ];
-
+    final url = 'http://www.google.cn/maps/vt?lyrs=m@189&gl=cn&x={x}&y={y}&z={z}';
     return Scaffold(
       appBar: AppBar(title: Text('Home')),
       drawer: buildDrawer(context, route),
@@ -57,9 +57,7 @@ class HomePage extends StatelessWidget {
                 ),
                 layers: [
                   TileLayerOptions(
-                      urlTemplate:
-                          'https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png',
-                      subdomains: ['a', 'b', 'c']),
+                      urlTemplate: url),
                   MarkerLayerOptions(markers: markers)
                 ],
               ),
