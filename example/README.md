@@ -1,8 +1,4 @@
 # leaflet_flutter_example
 
-A new Flutter project.
-
-## Getting Started
-
-For help getting started with Flutter, view our online
-[documentation](http://flutter.io/).
+## 安装依赖
+运行命令```flutter pub get```安装相关依赖。
